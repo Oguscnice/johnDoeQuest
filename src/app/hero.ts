@@ -3,5 +3,6 @@ export interface Hero {
   title: string;
   age: number;
   description: string;
+  testAffiche: boolean;
   onGetHasbulled(): void;
 }
