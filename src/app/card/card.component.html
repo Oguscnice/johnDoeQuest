@@ -1,0 +1,8 @@
+<div>
+<img [src]="hasbulla.imageUrl" alt="">
+<h2>{{hasbulla.title}}</h2>
+<p>Âge = {{ hasbulla.age }}</p>
+<input [(ngModel)]="hasbulla.description"> 
+<p>{{hasbulla.description}}</p> 
+<button (click)="hasbulla.onGetHasbulled()">Attack</button>
+</div>
