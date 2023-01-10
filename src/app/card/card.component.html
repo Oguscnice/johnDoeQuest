@@ -1,7 +1,7 @@
 <div>
 <img [src]="hasbulla.imageUrl" alt="">
 <h2>{{hasbulla.title}}</h2>
-<p *ngIf="hasbulla.testAffiche === true">Âge = {{ hasbulla.age }}</p>
+<p [hidden]  ="hasbulla.testAffiche">Âge = {{ hasbulla.age }}</p>
 <input [(ngModel)]="hasbulla.description"> 
 <p>{{hasbulla.description}}</p> 
 <button (click)="hasbulla.onGetHasbulled()">Age ?</button>
